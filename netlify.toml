@@ -1,0 +1,3 @@
+[build]
+  publish = "."
+  command = "echo 'Static site deploy: no build step required'"
