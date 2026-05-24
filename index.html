@@ -27,6 +27,8 @@
           <li><a href="#" class="panel-jump" data-target="2">Mission</a></li>
           <li><a href="#" class="panel-jump" data-target="3">Systems</a></li>
           <li><a href="#" class="panel-jump" data-target="4">Results</a></li>
+          <li><a href="#portfolio-section">Portfolio</a></li>
+          <li><a href="#faq-section">FAQ</a></li>
         </ul>
 
         <a href="#contact" class="nav-cta">Book a Strategy Call</a>
@@ -46,6 +48,8 @@
         <li><a href="#" class="panel-jump" data-target="2">Mission</a></li>
         <li><a href="#" class="panel-jump" data-target="3">Systems</a></li>
         <li><a href="#" class="panel-jump" data-target="4">Results</a></li>
+        <li><a href="#portfolio-section">Portfolio</a></li>
+        <li><a href="#faq-section">FAQ</a></li>
         <li><a href="#contact">Book a Strategy Call</a></li>
       </ul>
     </div>
@@ -90,9 +94,24 @@
                   >View Systems</a
                 >
               </div>
+
+              <button
+                class="hero-form-toggle"
+                id="hero-form-toggle"
+                type="button"
+                aria-expanded="false"
+                aria-controls="hero-lead-form"
+              >
+                Expand Quick Form
+              </button>
             </div>
 
-            <form class="hero-lead-form glass-card" action="#" method="post">
+            <form
+              class="hero-lead-form glass-card"
+              id="hero-lead-form"
+              action="#"
+              method="post"
+            >
               <h3>Get Your Free Growth Blueprint</h3>
               <div class="form-row">
                 <input
@@ -198,31 +217,67 @@
             <h2 class="panel-heading">What Roofing Owners Say</h2>
             <div class="testi-row">
               <article class="testi-item glass-card">
+                <img
+                  class="testi-avatar"
+                  src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200"
+                  alt="Mark J"
+                />
+                <div class="testi-head">
+                  <p class="testi-name">Mark J.</p>
+                  <p class="testi-role">Owner, Elite Slate Works</p>
+                </div>
                 <p class="quote">
                   "Before DayBreak, our lead flow was unpredictable. Now we have
                   a premium digital presence and automated follow-up that never
                   misses."
                 </p>
-                <p class="author">Mark J. | Owner, Elite Slate Works</p>
+                <p class="review-meta">Google Review | 5.0</p>
+                <div class="testi-stars" aria-label="5 star rating">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
               </article>
 
               <article class="testi-item glass-card feature-card">
+                <img
+                  class="testi-avatar"
+                  src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=200"
+                  alt="David O"
+                />
+                <div class="testi-head">
+                  <p class="testi-name">David O.</p>
+                  <p class="testi-role">CEO, Peak Architectural</p>
+                </div>
                 <p class="feature-kpi">+40%</p>
                 <p class="feature-meta">Average Project Value Lift</p>
                 <p class="quote">
                   "They did not just build a website. They built a revenue
                   engine that finally matches the craftsmanship of our roofs."
                 </p>
-                <p class="author">David O. | CEO, Peak Architectural</p>
+                <p class="review-meta">Case Study Outcome</p>
+                <div class="testi-stars" aria-label="5 star rating">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
               </article>
 
               <article class="testi-item glass-card">
+                <img
+                  class="testi-avatar"
+                  src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&h=200&auto=format&fit=crop"
+                  alt="Sarah M"
+                />
+                <div class="testi-head">
+                  <p class="testi-name">Sarah M.</p>
+                  <p class="testi-role">Principal, Mitchell Roofing</p>
+                </div>
                 <p class="quote">
                   "The design quality is exceptional and the backend systems are
                   practical. DayBreak helped us look premium and operate like a
                   serious company."
                 </p>
-                <p class="author">Sarah M. | Principal, Mitchell Roofing</p>
+                <p class="review-meta">Facebook Review | 5.0</p>
+                <div class="testi-stars" aria-label="5 star rating">
+                  <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
               </article>
             </div>
           </div>
@@ -349,7 +404,310 @@
       </div>
     </div>
 
-    <footer id="contact">
+    <section class="post-scroll" id="portfolio-section">
+      <div class="post-shell">
+        <div class="post-head">
+          <p class="post-label">Case Studies</p>
+          <h2 class="post-heading">The New Case Study Experience</h2>
+          <p class="post-body">
+            Same strategy, now presented with the premium rotating testimonial
+            style you requested.
+          </p>
+        </div>
+
+        <div class="case-study-shell" id="case-study-shell">
+          <div class="cs-index-wrap">
+            <p class="cs-index-number" id="cs-index-number">01</p>
+          </div>
+
+          <div class="cs-layout">
+            <div class="cs-rail">
+              <span class="cs-rail-label">Case Studies</span>
+              <div class="cs-progress-track">
+                <div class="cs-progress-fill" id="cs-progress-fill"></div>
+              </div>
+            </div>
+
+            <div class="cs-content">
+              <span class="cs-company" id="cs-company">Atlas Ridge Roofing</span>
+
+              <blockquote class="cs-quote" id="cs-quote">
+                Transformed our entire creative process overnight.
+              </blockquote>
+
+              <div class="cs-bottom-row">
+                <div class="cs-author-wrap">
+                  <div class="cs-author-line"></div>
+                  <div>
+                    <p class="cs-author" id="cs-author">Sarah Chen</p>
+                    <p class="cs-role" id="cs-role">Design Director</p>
+                  </div>
+                </div>
+
+                <div class="cs-nav">
+                  <button class="cs-nav-btn" id="cs-prev" aria-label="Previous case study">
+                    <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <path d="M10 12L6 8L10 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                  <button class="cs-nav-btn" id="cs-next" aria-label="Next case study">
+                    <svg width="18" height="18" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                      <path d="M6 4L10 8L6 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="cs-ticker" aria-hidden="true">
+            <div class="cs-ticker-track" id="cs-ticker-track"></div>
+          </div>
+        </div>
+
+        <div class="team-photo-strip">
+          <figure class="team-photo-wide">
+            <img
+              src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1280&auto=format&fit=crop"
+              alt="Team workshop placeholder"
+              loading="lazy"
+            />
+            <figcaption>Founder + Co-founder Workshop Moment</figcaption>
+          </figure>
+          <figure class="team-photo-square">
+            <img
+              src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=720&auto=format&fit=crop"
+              alt="Office portrait placeholder"
+              loading="lazy"
+            />
+            <figcaption>Office Portrait Slot</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="post-scroll" id="founder-section">
+      <div class="post-shell founder-stage">
+        <div class="founder-main">
+          <p class="post-label">Founder Story</p>
+          <h2 class="post-heading">Built In The Field With Roofing Teams</h2>
+          <p class="post-body">
+            DayBreak started after seeing great contractors lose deals because
+            their online presence looked smaller than their craftsmanship.
+          </p>
+          <p class="post-body">
+            We build digital systems that make trust visible before the first
+            sales call, then support your team through launch and optimization.
+          </p>
+          <p class="founder-signature">- Jared Moodley, Founder</p>
+        </div>
+
+        <div class="founder-track">
+          <article class="track-item">
+            <span>01</span>
+            <p>Weekly milestones and transparent build updates.</p>
+          </article>
+          <article class="track-item">
+            <span>02</span>
+            <p>Messaging framework tailored for homeowner trust.</p>
+          </article>
+          <article class="track-item">
+            <span>03</span>
+            <p>CRM and follow-up logic mapped to your sales flow.</p>
+          </article>
+          <article class="track-item promise-item">
+            <span>04</span>
+            <p>
+              Performance promise: if timeline misses happen without signed
+              scope changes, you receive service credit.
+            </p>
+          </article>
+        </div>
+
+        <div class="founder-photo-grid">
+          <figure class="founder-photo-card">
+            <img
+              src="https://images.unsplash.com/photo-1556157382-97eda2d62296?q=80&w=900&auto=format&fit=crop"
+              alt="Founder headshot placeholder"
+              loading="lazy"
+            />
+            <figcaption>Founder Headshot Area</figcaption>
+          </figure>
+          <figure class="founder-photo-card">
+            <img
+              src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=900&auto=format&fit=crop"
+              alt="Co-founder headshot placeholder"
+              loading="lazy"
+            />
+            <figcaption>Co-Founder Headshot Area</figcaption>
+          </figure>
+          <figure class="founder-photo-banner">
+            <img
+              src="https://images.unsplash.com/photo-1552581234-26160f608093?q=80&w=1400&auto=format&fit=crop"
+              alt="Founders collaboration placeholder"
+              loading="lazy"
+            />
+            <figcaption>Founders Collaboration Banner</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="post-scroll" id="faq-section">
+      <div class="post-shell faq-showcase-shell">
+        <div class="faq-showcase-media">
+          <img
+            src="https://images.unsplash.com/photo-1555212697-194d092e3b8f?q=80&w=830&h=844&auto=format&fit=crop"
+            alt="Designer planning a website experience"
+            loading="lazy"
+          />
+        </div>
+
+        <div class="faq-showcase-content">
+          <p class="faq-kicker">FAQ's</p>
+          <h2 class="faq-title">Looking for answer?</h2>
+          <p class="faq-intro">
+            Ship beautiful frontends without the overhead. Your growth stack is
+            built to be customizable, scalable, and developer-friendly.
+          </p>
+
+          <div class="faq-showcase-list" id="faq-showcase-list">
+            <details class="faq-showcase-item" open>
+              <summary>
+                <span>How to use this component?</span>
+                <span class="faq-chevron" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m4.5 7.2 3.793 3.793a1 1 0 0 0 1.414 0L13.5 7.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </summary>
+              <p>
+                To use this component, import it into your project and render it
+                in your JSX where the FAQ experience should appear.
+              </p>
+            </details>
+
+            <details class="faq-showcase-item">
+              <summary>
+                <span>Are there any other components available?</span>
+                <span class="faq-chevron" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m4.5 7.2 3.793 3.793a1 1 0 0 0 1.414 0L13.5 7.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </summary>
+              <p>
+                Yes. You can pair this with testimonial, portfolio, and pricing
+                modules already used across your current website.
+              </p>
+            </details>
+
+            <details class="faq-showcase-item">
+              <summary>
+                <span>Are components responsive?</span>
+                <span class="faq-chevron" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m4.5 7.2 3.793 3.793a1 1 0 0 0 1.414 0L13.5 7.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </summary>
+              <p>
+                Yes. This section is optimized for desktop and mobile, including
+                touch-friendly targets and balanced content spacing.
+              </p>
+            </details>
+
+            <details class="faq-showcase-item">
+              <summary>
+                <span>Can I customize the components?</span>
+                <span class="faq-chevron" aria-hidden="true">
+                  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m4.5 7.2 3.793 3.793a1 1 0 0 0 1.414 0L13.5 7.2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </summary>
+              <p>
+                Absolutely. You can change copy, colors, spacing, and animation
+                tempo to match your brand and conversion goals.
+              </p>
+            </details>
+          </div>
+
+          <div class="cta-banner clean-cta">
+            <p>Ready to become the trusted roofing brand in your market?</p>
+            <a href="#contact" class="panel-cta-btn">Book a Strategy Call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="post-scroll" id="contact">
+      <div class="post-shell contact-shell">
+        <div class="contact-copy">
+          <p class="post-label">Contact</p>
+          <h2 class="post-heading">Let&apos;s Build Your Roofing Growth System</h2>
+          <p class="post-body">
+            Tell us about your market, goals, and current bottlenecks. We&apos;ll
+            reply with a focused plan you can act on immediately.
+          </p>
+
+          <div class="contact-points">
+            <p><strong>Email:</strong> contact@daybreaktechinnovations.com</p>
+            <p><strong>Phone:</strong> +1 (555) 010-2233</p>
+            <p><strong>Hours:</strong> Mon - Fri | 8am - 6pm</p>
+          </div>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <div class="contact-grid">
+            <input
+              type="text"
+              name="contact-name"
+              placeholder="Your Name"
+              aria-label="Your Name"
+              autocomplete="name"
+              required
+            />
+            <input
+              type="email"
+              name="contact-email"
+              placeholder="Work Email"
+              aria-label="Work Email"
+              autocomplete="email"
+              required
+            />
+            <input
+              type="text"
+              name="contact-company"
+              placeholder="Roofing Company"
+              aria-label="Roofing Company"
+              autocomplete="organization"
+              required
+            />
+            <input
+              type="tel"
+              name="contact-phone"
+              placeholder="Phone Number"
+              aria-label="Phone Number"
+              autocomplete="tel"
+              required
+            />
+          </div>
+
+          <textarea
+            name="contact-message"
+            placeholder="What do you want to improve first?"
+            aria-label="Message"
+            rows="4"
+            required
+          ></textarea>
+
+          <button type="submit" class="panel-cta-btn">Request Strategy Call</button>
+        </form>
+      </div>
+    </section>
+
+    <footer id="site-footer">
       <div class="footer-inner">
         <div class="footer-brand">
           <p class="footer-logo">DayBreak Systems</p>
@@ -379,7 +737,7 @@
 
         <div class="footer-contact">
           <h4>Contact</h4>
-          <p>hello@daybreaksystems.com</p>
+          <p>contact@daybreaktechinnovations.com</p>
           <p>+1 (555) 010-2233</p>
           <p>Mon - Fri | 8am - 6pm</p>
         </div>

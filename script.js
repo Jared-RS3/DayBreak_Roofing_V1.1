@@ -270,7 +270,170 @@
     };
   }
 
+  function initCaseStudyCarousel() {
+    const shell = document.getElementById("case-study-shell");
+    if (!shell) return;
+
+    const indexEl = document.getElementById("cs-index-number");
+    const companyEl = document.getElementById("cs-company");
+    const quoteEl = document.getElementById("cs-quote");
+    const authorEl = document.getElementById("cs-author");
+    const roleEl = document.getElementById("cs-role");
+    const progressEl = document.getElementById("cs-progress-fill");
+    const tickerEl = document.getElementById("cs-ticker-track");
+    const prevBtn = document.getElementById("cs-prev");
+    const nextBtn = document.getElementById("cs-next");
+
+    if (
+      !indexEl ||
+      !companyEl ||
+      !quoteEl ||
+      !authorEl ||
+      !roleEl ||
+      !progressEl ||
+      !tickerEl ||
+      !prevBtn ||
+      !nextBtn
+    ) {
+      return;
+    }
+
+    const caseStudies = [
+      {
+        quote: "Transformed our entire creative process overnight.",
+        author: "Sarah Chen",
+        role: "Design Director",
+        company: "Linear",
+      },
+      {
+        quote: "The most elegant solution we've ever implemented.",
+        author: "Marcus Webb",
+        role: "Creative Lead",
+        company: "Vercel",
+      },
+      {
+        quote: "Pure craftsmanship in every single detail.",
+        author: "Elena Frost",
+        role: "Head of Product",
+        company: "Stripe",
+      },
+    ];
+
+    let activeIndex = 0;
+    let timer = null;
+
+    function renderTicker() {
+      const tickerText = caseStudies.map((item) => item.company).join(" • ");
+      tickerEl.textContent = `${tickerText} • ${tickerText} • ${tickerText} • ${tickerText} •`;
+    }
+
+    function render(index) {
+      const current = caseStudies[index];
+      indexEl.textContent = String(index + 1).padStart(2, "0");
+      companyEl.textContent = current.company;
+
+      quoteEl.classList.add("is-changing");
+      window.setTimeout(() => {
+        quoteEl.textContent = current.quote;
+        quoteEl.classList.remove("is-changing");
+      }, 140);
+
+      authorEl.textContent = current.author;
+      roleEl.textContent = current.role;
+
+      const pct = ((index + 1) / caseStudies.length) * 100;
+      progressEl.style.height = `${pct}%`;
+    }
+
+    function goNext() {
+      activeIndex = (activeIndex + 1) % caseStudies.length;
+      render(activeIndex);
+    }
+
+    function goPrev() {
+      activeIndex = (activeIndex - 1 + caseStudies.length) % caseStudies.length;
+      render(activeIndex);
+    }
+
+    function restartTimer() {
+      if (timer) {
+        window.clearInterval(timer);
+      }
+      timer = window.setInterval(goNext, 6000);
+    }
+
+    prevBtn.addEventListener("click", () => {
+      goPrev();
+      restartTimer();
+    });
+
+    nextBtn.addEventListener("click", () => {
+      goNext();
+      restartTimer();
+    });
+
+    renderTicker();
+    render(activeIndex);
+    restartTimer();
+  }
+
+  function initFaqShowcase() {
+    const list = document.getElementById("faq-showcase-list");
+    if (!list) return;
+
+    const items = Array.from(list.querySelectorAll("details"));
+    items.forEach((item) => {
+      item.addEventListener("toggle", () => {
+        if (!item.open) return;
+        items.forEach((other) => {
+          if (other !== item) other.open = false;
+        });
+      });
+    });
+  }
+
+  function initMobileHeroFormToggle() {
+    const heroPanel = document.querySelector("#panel-hero .panel-content");
+    const formToggleBtn = document.getElementById("hero-form-toggle");
+    if (!heroPanel || !formToggleBtn) return;
+
+    const mobileMq = window.matchMedia("(max-width: 640px)");
+    let mobileOpen = false;
+
+    function syncState() {
+      if (!mobileMq.matches) {
+        heroPanel.classList.remove("form-collapsed");
+        formToggleBtn.setAttribute("aria-expanded", "true");
+        formToggleBtn.textContent = "Quick Form Always Visible";
+        mobileOpen = true;
+        return;
+      }
+
+      heroPanel.classList.toggle("form-collapsed", !mobileOpen);
+      formToggleBtn.setAttribute("aria-expanded", mobileOpen ? "true" : "false");
+      formToggleBtn.textContent = mobileOpen ? "Hide Quick Form" : "Expand Quick Form";
+    }
+
+    formToggleBtn.addEventListener("click", () => {
+      if (!mobileMq.matches) return;
+      mobileOpen = !mobileOpen;
+      syncState();
+    });
+
+    if (typeof mobileMq.addEventListener === "function") {
+      mobileMq.addEventListener("change", () => {
+        mobileOpen = false;
+        syncState();
+      });
+    }
+
+    syncState();
+  }
+
   attachUI();
+  initCaseStudyCarousel();
+  initFaqShowcase();
+  initMobileHeroFormToggle();
   window.addEventListener("scroll", onScroll, { passive: true });
   window.addEventListener("resize", resizeCanvas);
 
