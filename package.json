@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
+    "build": "npm run build:static",
+    "build:static": "rm -rf dist && mkdir -p dist && cp index.html styles.css script.js dist/ && cp -R images dist/images && cp -R assets dist/assets",
+    "build:react": "tsc && vite build",
     "preview": "vite preview"
   },
   "keywords": [],
