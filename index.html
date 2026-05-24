@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      DayBreak Roofing Systems | Digital Foundations for Roofing Empires
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <nav id="nav">
+      <div class="nav-shell">
+        <a href="#" class="nav-logo">
+          <span class="logo-mark">DB</span>
+          <span>DayBreak <strong>Systems</strong></span>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="#" class="panel-jump" data-target="0">Home</a></li>
+          <li><a href="#" class="panel-jump" data-target="2">Mission</a></li>
+          <li><a href="#" class="panel-jump" data-target="3">Systems</a></li>
+          <li><a href="#" class="panel-jump" data-target="4">Results</a></li>
+        </ul>
+
+        <a href="#contact" class="nav-cta">Book a Strategy Call</a>
+
+        <button class="nav-hamburger" id="nav-hamburger" aria-label="Open menu">
+          &#9776;
+        </button>
+      </div>
+    </nav>
+
+    <div id="mobile-menu" class="mobile-menu">
+      <button class="mobile-close" id="mobile-close" aria-label="Close menu">
+        &#10005;
+      </button>
+      <ul>
+        <li><a href="#" class="panel-jump" data-target="0">Home</a></li>
+        <li><a href="#" class="panel-jump" data-target="2">Mission</a></li>
+        <li><a href="#" class="panel-jump" data-target="3">Systems</a></li>
+        <li><a href="#" class="panel-jump" data-target="4">Results</a></li>
+        <li><a href="#contact">Book a Strategy Call</a></li>
+      </ul>
+    </div>
+
+    <div id="scroll-container">
+      <canvas id="hero-canvas"></canvas>
+
+      <div id="overlay-layer">
+        <section class="panel" id="panel-hero">
+          <div class="panel-bg"></div>
+          <div class="panel-content panel-center hero-layout">
+            <div class="hero-copy">
+              <!-- <p class="panel-eyebrow">
+                Digital Systems Agency for Roofing Companies
+              </p> -->
+
+              <div
+                class="trust-certificate glass-card"
+                aria-label="Top rated agency certificate"
+              >
+                <div class="trust-avatars" aria-hidden="true">
+                  <span class="avatar-dot">MJ</span>
+                  <span class="avatar-dot">DO</span>
+                  <span class="avatar-dot">SM</span>
+                </div>
+                <div class="trust-copy">
+                  <p class="trust-stars">★★★★★</p>
+                  <p class="trust-label">Top-Rated Agency for Roofers</p>
+                </div>
+              </div>
+
+              <h1 class="hero-title">Build a Roofing Brand</h1>
+              <p class="hero-sub">
+                DayBreak Roofing Systems builds elite websites, CRM automations,
+                and lead engines so roofing owners can scale without being
+                chained to the phone.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#contact" class="panel-cta-btn">Build Your System</a>
+                <a href="#" class="ghost-btn panel-jump" data-target="3"
+                  >View Systems</a
+                >
+              </div>
+            </div>
+
+            <form class="hero-lead-form glass-card" action="#" method="post">
+              <h3>Get Your Free Growth Blueprint</h3>
+              <div class="form-row">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  aria-label="Your Name"
+                  autocomplete="name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Work Email"
+                  aria-label="Work Email"
+                  autocomplete="email"
+                  required
+                />
+              </div>
+              <div class="form-row form-row-single">
+                <input
+                  type="text"
+                  name="company"
+                  placeholder="Roofing Company Name"
+                  aria-label="Roofing Company Name"
+                  autocomplete="organization"
+                  required
+                />
+              </div>
+              <div class="form-row">
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Your Phone Number"
+                  aria-label="Your Phone Number"
+                  autocomplete="tel"
+                  required
+                />
+                <select name="location" aria-label="Your Location" required>
+                  <option value="" selected disabled>Select Location</option>
+                  <option value="alabama">Alabama</option>
+                  <option value="alaska">Alaska</option>
+                  <option value="arizona">Arizona</option>
+                  <option value="arkansas">Arkansas</option>
+                  <option value="california">California</option>
+                  <option value="colorado">Colorado</option>
+                  <option value="connecticut">Connecticut</option>
+                  <option value="delaware">Delaware</option>
+                  <option value="florida">Florida</option>
+                  <option value="georgia">Georgia</option>
+                  <option value="hawaii">Hawaii</option>
+                  <option value="idaho">Idaho</option>
+                  <option value="illinois">Illinois</option>
+                  <option value="indiana">Indiana</option>
+                  <option value="iowa">Iowa</option>
+                  <option value="kansas">Kansas</option>
+                  <option value="kentucky">Kentucky</option>
+                  <option value="louisiana">Louisiana</option>
+                  <option value="maine">Maine</option>
+                  <option value="maryland">Maryland</option>
+                  <option value="massachusetts">Massachusetts</option>
+                  <option value="michigan">Michigan</option>
+                  <option value="minnesota">Minnesota</option>
+                  <option value="mississippi">Mississippi</option>
+                  <option value="missouri">Missouri</option>
+                  <option value="montana">Montana</option>
+                  <option value="nebraska">Nebraska</option>
+                  <option value="nevada">Nevada</option>
+                  <option value="new-hampshire">New Hampshire</option>
+                  <option value="new-jersey">New Jersey</option>
+                  <option value="new-mexico">New Mexico</option>
+                  <option value="new-york">New York</option>
+                  <option value="north-carolina">North Carolina</option>
+                  <option value="north-dakota">North Dakota</option>
+                  <option value="ohio">Ohio</option>
+                  <option value="oklahoma">Oklahoma</option>
+                  <option value="oregon">Oregon</option>
+                  <option value="pennsylvania">Pennsylvania</option>
+                  <option value="rhode-island">Rhode Island</option>
+                  <option value="south-carolina">South Carolina</option>
+                  <option value="south-dakota">South Dakota</option>
+                  <option value="tennessee">Tennessee</option>
+                  <option value="texas">Texas</option>
+                  <option value="utah">Utah</option>
+                  <option value="vermont">Vermont</option>
+                  <option value="virginia">Virginia</option>
+                  <option value="washington">Washington</option>
+                  <option value="west-virginia">West Virginia</option>
+                  <option value="wisconsin">Wisconsin</option>
+                  <option value="wyoming">Wyoming</option>
+                </select>
+              </div>
+              <p class="form-note">No spam. We reply in under 1 business day.</p>
+              <button type="submit">Send Me The Plan</button>
+            </form>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-testimonials">
+          <div class="panel-bg"></div>
+          <div class="panel-content panel-bottom">
+            <p class="panel-label">Success Stories</p>
+            <h2 class="panel-heading">What Roofing Owners Say</h2>
+            <div class="testi-row">
+              <article class="testi-item glass-card">
+                <p class="quote">
+                  "Before DayBreak, our lead flow was unpredictable. Now we have
+                  a premium digital presence and automated follow-up that never
+                  misses."
+                </p>
+                <p class="author">Mark J. | Owner, Elite Slate Works</p>
+              </article>
+
+              <article class="testi-item glass-card feature-card">
+                <p class="feature-kpi">+40%</p>
+                <p class="feature-meta">Average Project Value Lift</p>
+                <p class="quote">
+                  "They did not just build a website. They built a revenue
+                  engine that finally matches the craftsmanship of our roofs."
+                </p>
+                <p class="author">David O. | CEO, Peak Architectural</p>
+              </article>
+
+              <article class="testi-item glass-card">
+                <p class="quote">
+                  "The design quality is exceptional and the backend systems are
+                  practical. DayBreak helped us look premium and operate like a
+                  serious company."
+                </p>
+                <p class="author">Sarah M. | Principal, Mitchell Roofing</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-mission">
+          <div class="panel-bg"></div>
+          <div class="panel-content panel-left">
+            <p class="panel-label">Our Mission</p>
+            <h2 class="panel-heading">Modernizing the Roofing Industry</h2>
+            <p class="panel-body">
+              Most roofing companies are world-class in craftsmanship but
+              underpowered online. We close that gap with high-end design and
+              conversion-focused systems.
+            </p>
+            <p class="panel-body">
+              Our Architecture of Growth combines premium branding, sales-ready
+              websites, CRM automation, and lead nurture workflows so owners can
+              scale predictably.
+            </p>
+
+            <div class="stat-row">
+              <div class="stat">
+                <span class="stat-num">45%</span>
+                <span class="stat-lbl">Average Lead Increase</span>
+              </div>
+              <div class="stat">
+                <span class="stat-num">10x</span>
+                <span class="stat-lbl">Brand Authority Lift</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-systems">
+          <div class="panel-bg"></div>
+          <div class="panel-content panel-center panel-wide">
+            <p class="panel-label">The Systems We Build</p>
+            <h2 class="panel-heading">Your Digital Roofing Operating System</h2>
+
+            <div class="svc-grid">
+              <article class="svc-item glass-card">
+                <h3>Custom Roofing Websites</h3>
+                <p>
+                  Conversion-led websites that position your company as the
+                  obvious premium choice in your market.
+                </p>
+              </article>
+
+              <article class="svc-item glass-card">
+                <h3>CRM and Automation</h3>
+                <p>
+                  Lead capture, follow-up sequences, and pipeline automations so
+                  no opportunity is lost.
+                </p>
+              </article>
+
+              <article class="svc-item glass-card">
+                <h3>Omni-Channel Lead Generation</h3>
+                <p>
+                  Targeted campaigns that feed your team qualified prospects for
+                  high-value roof projects.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" id="panel-results">
+          <div class="panel-bg"></div>
+          <div class="panel-content panel-bottom">
+            <p class="panel-label">Our Process</p>
+            <h2 class="panel-heading">From Contractor to Category Leader</h2>
+
+            <div class="process-grid">
+              <article class="process-step glass-card">
+                <span>01</span>
+                <h3>Strategic Audit</h3>
+                <p>
+                  We map your current brand, funnel, and systems to uncover
+                  growth leverage.
+                </p>
+              </article>
+              <article class="process-step glass-card">
+                <span>02</span>
+                <h3>System Build</h3>
+                <p>
+                  Website, CRM, and automation stack built around your sales
+                  process.
+                </p>
+              </article>
+              <article class="process-step glass-card">
+                <span>03</span>
+                <h3>Launch and Fill</h3>
+                <p>
+                  Campaigns go live and qualified opportunities begin flowing
+                  into your pipeline.
+                </p>
+              </article>
+              <article class="process-step glass-card">
+                <span>04</span>
+                <h3>Scale and Optimize</h3>
+                <p>
+                  Monthly optimization to keep raising conversion rate and close
+                  rate.
+                </p>
+              </article>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div id="scroll-indicator">
+        <span>Scroll to explore</span>
+        <div class="scroll-arrow"></div>
+      </div>
+
+      <div id="section-dots">
+        <button class="dot active" data-section="0" aria-label="Hero"></button>
+        <button class="dot" data-section="1" aria-label="Testimonials"></button>
+        <button class="dot" data-section="2" aria-label="Mission"></button>
+        <button class="dot" data-section="3" aria-label="Systems"></button>
+        <button class="dot" data-section="4" aria-label="Process"></button>
+      </div>
+    </div>
+
+    <footer id="contact">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <p class="footer-logo">DayBreak Systems</p>
+          <p class="footer-tagline">
+            The digital systems agency helping roofing companies scale with
+            precision.
+          </p>
+        </div>
+
+        <div class="footer-links">
+          <h4>Systems</h4>
+          <ul>
+            <li>
+              <a href="#" class="panel-jump" data-target="3">Web Design</a>
+            </li>
+            <li>
+              <a href="#" class="panel-jump" data-target="3">CRM Automation</a>
+            </li>
+            <li>
+              <a href="#" class="panel-jump" data-target="3">Lead Generation</a>
+            </li>
+            <li>
+              <a href="#" class="panel-jump" data-target="4">Growth Strategy</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <p>hello@daybreaksystems.com</p>
+          <p>+1 (555) 010-2233</p>
+          <p>Mon - Fri | 8am - 6pm</p>
+        </div>
+      </div>
+
+      <p class="footer-copy">
+        &copy; 2026 DayBreak Roofing Systems. All rights reserved.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
