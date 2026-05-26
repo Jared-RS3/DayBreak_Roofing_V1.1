@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "dev": "vite",
-    "build": "npm run build:static",
+    "build": "npm run build:react",
     "build:static": "rm -rf dist && mkdir -p dist && cp index.html styles.css script.js dist/ && cp -R images dist/images && cp -R assets dist/assets",
     "build:react": "tsc && vite build",
     "preview": "vite preview"
@@ -15,6 +15,7 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^12.40.0",
+    "gsap": "^3.15.0",
     "lucide-react": "^1.16.0",
     "motion": "^12.40.0",
     "react": "^19.2.6",
